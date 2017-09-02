@@ -3,21 +3,10 @@
 /**
  * Dependencies
  */
-const Promise = require('bluebird');
 const jwt = require('jsonwebtoken');
-const errors = require('meanie-express-error-handling');
-const InvalidTokenError = errors.InvalidTokenError;
-const ExpiredTokenError = errors.ExpiredTokenError;
-
-/**
- * Check if token config is valid
- */
-function isValidConfig(config) {
-  if (!config.secret || !config.audience || !config.issuer) {
-    return false;
-  }
-  return true;
-}
+const {
+  InvalidTokenError, ExpiredTokenError,
+} = require('@meanie/express-errors');
 
 /**
  * Defaults and registered token types
@@ -119,7 +108,7 @@ const service = module.exports = {
 
     //Extend with default configuration and validate
     config = service.mergeConfig(config);
-    if (!isValidConfig(config)) {
+    if (!service.isValidConfig(config)) {
       throw new Error('Invalid token configuration for type `' + type + '`');
     }
 
@@ -173,6 +162,17 @@ const service = module.exports = {
    */
   mergeConfig(config) {
     return Object.assign({}, defaults, config || {});
+  },
+
+  /**
+   * Check if config is valid
+   */
+  isValidConfig(config) {
+    const {secret, audience, issuer} = config;
+    if (!secret || !audience || !issuer) {
+      return false;
+    }
+    return true;
   },
 
   /**

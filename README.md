@@ -1,21 +1,25 @@
-# meanie-express-jwt-service
+# @meanie/express-jsonwebtoken
 
-[![npm version](https://img.shields.io/npm/v/meanie-express-jwt-service.svg)](https://www.npmjs.com/package/meanie-express-jwt-service)
-[![node dependencies](https://david-dm.org/meanie/express-jwt-service.svg)](https://david-dm.org/meanie/express-jwt-service)
-[![github issues](https://img.shields.io/github/issues/meanie/express-jwt-service.svg)](https://github.com/meanie/express-jwt-service/issues)
-[![codacy](https://img.shields.io/codacy/c0decdb116194cc9b1e7c1d53b6a8b3d.svg)](https://www.codacy.com/app/meanie/express-jwt-service)
+[![npm version](https://img.shields.io/npm/v/@meanie/express-jsonwebtoken.svg)](https://www.npmjs.com/package/@meanie/express-jsonwebtoken)
+[![node dependencies](https://david-dm.org/meanie/express-jsonwebtoken.svg)](https://david-dm.org/meanie/express-jsonwebtoken)
+[![github issues](https://img.shields.io/github/issues/meanie/express-jsonwebtoken.svg)](https://github.com/meanie/express-jsonwebtoken/issues)
+[![codacy](https://img.shields.io/codacy/c0decdb116194cc9b1e7c1d53b6a8b3d.svg)](https://www.codacy.com/app/meanie/express-jsonwebtoken)
 
 
-A service for handling JSON Web Tokens, for use with [Meanie Express Seed](https://github.com/meanie/express-seed) projects
+A service for handling JSON Web Tokens in Express or [Meanie Express Seed](https://github.com/meanie/express-seed) projects
 
 ![Meanie](https://raw.githubusercontent.com/meanie/meanie/master/meanie-logo-full.png)
 
 ## Installation
 
-You can install this package using `npm`.
+You can install this package using `yarn` or `npm`.
 
 ```shell
-npm install meanie-express-jwt-service --save
+#yarn
+yarn add @meanie/express-jsonwebtoken
+
+#npm
+npm install @meanie/express-jsonwebtoken --save
 ```
 
 ## Usage
@@ -24,7 +28,7 @@ See the [Meanie Express Seed](https://github.com/meanie/express-seed) for usage.
 
 ## Issues & feature requests
 
-Please report any bugs, issues, suggestions and feature requests in the [meanie-express-jwt-service issue tracker](https://github.com/meanie/express-jwt-service/issues).
+Please report any bugs, issues, suggestions and feature requests in the [@meanie/express-jsonwebtoken issue tracker](https://github.com/meanie/express-jsonwebtoken/issues).
 
 ## Contributing
 

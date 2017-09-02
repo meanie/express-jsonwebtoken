@@ -1,21 +1,24 @@
 {
-  "name": "meanie-express-jwt-service",
-  "description": "A service for handling JSON Web Tokens, for use with Meanie Express Seed projects",
-  "version": "2.0.2",
-  "homepage": "https://github.com/meanie/express-jwt-service",
+  "name": "@meanie/express-jsonwebtoken",
+  "description": "A service for handling JSON Web Tokens in Express projects",
+  "version": "3.0.0",
+  "homepage": "https://github.com/meanie/express-jsonwebtoken",
   "author": {
     "name": "Adam Reis",
     "email": "adam@reis.nz",
-    "url": "http://adam.reis.nz/"
+    "url": "https://adam.reis.nz/"
   },
   "contributors": [],
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/meanie/express-jwt-service"
+    "url": "https://github.com/meanie/express-jsonwebtoken"
   },
   "bugs": {
-    "url": "https://github.com/meanie/express-jwt-service/issues"
+    "url": "https://github.com/meanie/express-jsonwebtoken/issues"
   },
   "keywords": [
     "meanie",
@@ -24,21 +27,14 @@
     "service"
   ],
   "engines": {
-    "node": ">=7.4.0"
+    "node": ">=8"
   },
   "main": "index.js",
   "scripts": {
-    "lint": "eslint .",
     "postversion": "git push && git push --tags && npm publish"
   },
-  "dependencies": {
-    "bluebird": "^3.4.1",
-    "jsonwebtoken": "^7.1.6"
-  },
   "peerDependencies": {
-    "meanie-express-error-handling": ">=1.0.3"
-  },
-  "devDependencies": {
-    "eslint": "^2.13.1"
+    "jsonwebtoken": "^7.4.3",
+    "@meanie/express-errors": "^3.1.0"
   }
 }
