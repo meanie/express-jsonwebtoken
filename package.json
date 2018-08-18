@@ -35,6 +35,6 @@
   },
   "peerDependencies": {
     "jsonwebtoken": "^7.4.3 || ^8.1.0",
-    "@meanie/express-errors": "^3.1.0"
+    "@meanie/express-errors": ">=3.1.0"
   }
 }
